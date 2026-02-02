@@ -1,3 +1,7 @@
+
+// Decorator Design Pattern:
+// - It attaches additional responsibilities to an object dynamically
+
 abstract class Character
 {
     abstract String getAbilities();
@@ -68,11 +72,12 @@ public class DecoratorDesignPattern
 //        System.out.println(character.getAbilities());
 
         // Alternatives
-//        Character mario = new HeightUp(new MarioCharacter());
-//        System.out.println(mario.getAbilities());
-//        mario = new GunPowerUp(new HeightUp(new MarioCharacter()));
-//        System.out.println(mario.getAbilities());
-//        mario = new StarPowerUp(new GunPowerUp(new HeightUp(new MarioCharacter())));
-//        System.out.println(mario.getAbilities());
+        Character mario = new HeightUp(new MarioCharacter());
+        System.out.println(mario.getAbilities());
+        mario = new GunPowerUp(new HeightUp(new MarioCharacter()));
+        System.out.println(mario.getAbilities());
+        mario = new StarPowerUp(new GunPowerUp(new HeightUp(new MarioCharacter())));
+        System.out.println(mario.getAbilities());
+        // It will be executed like recursion that adds extra functionalities to an object
     }
 }

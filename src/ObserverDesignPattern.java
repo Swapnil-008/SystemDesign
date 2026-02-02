@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// Observer Design Pattern:
+// It defines a one-to-many relationship between  objects so that when one object changes state, all of its dependents are notified and updated automatically
+
 // Observer
 interface Channel
 {

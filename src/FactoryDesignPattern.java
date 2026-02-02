@@ -1,7 +1,19 @@
 import java.io.IOException;
 
+// Factory Design Pattern:
+// - It is a creational design pattern that deals with object creation
+// - Instead of creating objects directly using new, we delegate responsibility of object creation to a factory
+// - Factory hides the logic of object creation
+// - Factory design pattern provides an interface for creating objects and lets subclasses to decide which class to instantiate
+
+// Why do we use factory:
+// - Client code is tightly coupled with concrete classes
+// - On every change in class have to make changes in client
+// - Violates open-close principle
+
 // Simple factory:
-// A single factory class decides which concrete class to instantiate
+// - A single factory class decides which concrete class to instantiate
+// - One factory class is used to create an object of multiple types
 
 //interface Burger
 //{
@@ -51,9 +63,7 @@ import java.io.IOException;
 //        {
 //            return new PremiumBurger();
 //        }
-//        else {
-//            return null;
-//        }
+//        throw new IllegalArgumentException("Invalid Burger Type");
 //    }
 //}
 //
@@ -72,6 +82,7 @@ import java.io.IOException;
 //}
 
 // Factory Method:
+// - Factory Method is a creational design pattern where object creation is delegated to subclasses instead of a single factory
 
 //interface Burger
 //{
@@ -156,7 +167,6 @@ import java.io.IOException;
 //        {
 //            return new PremiumBurger();
 //        }
-//
 //        throw new IllegalArgumentException("Invalid burger type");
 //    }
 //}
@@ -178,7 +188,6 @@ import java.io.IOException;
 //        {
 //            return new PremiumWheatBurger();
 //        }
-//
 //        throw new IllegalArgumentException("Invalid burger type");
 //    }
 //}
@@ -197,6 +206,7 @@ import java.io.IOException;
 //}
 
 // Abstract factory method:
+// - Abstract factory method provides an interface for creating families of related objects without specifying their concrete classes
 
 interface Burger
 {

@@ -1,3 +1,12 @@
+
+// Adapter Design Pattern:
+// - It converts two incompatible interfaces to work together by converting one interface to another expected by the client
+// - Wrapper that makes things compatible
+// - Target: Interface expects to client
+// - Adaptee: Existing incompatible class
+// - Adapter: Converts adaptee to target
+// - Client: Uses target interface
+
 // 1. Target interface expected by the client
 interface Reports
 {
