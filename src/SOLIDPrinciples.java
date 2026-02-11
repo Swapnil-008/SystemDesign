@@ -1,3 +1,7 @@
+// Solid Principles:
+// Solid principles are object-oriented design guidelines that help developers to build the software that is maintainable, flexible,
+// scalable, and easy to extend by avoiding common design problems
+
 // S : Single Responsibility Principle
 // Every class should have only one responsibility and one reason to change
 import java.util.List;
@@ -298,6 +302,7 @@ import java.util.ArrayList;
 //    }
 //}
 //
+// Client:
 //class BankAccount
 //{
 //    List<Account> accounts;
@@ -338,7 +343,7 @@ import java.util.ArrayList;
 //}
 //interface WithdrawalAccount extends DepositOnlyAccount
 //{
-//    void withdraw(int  amount);
+//    void withdraw(int amount);
 //}
 //class SavingAccount implements WithdrawalAccount
 //{
@@ -490,7 +495,8 @@ import java.util.ArrayList;
 
 // Return Type rule:
 
-// A method from parent class has X return type ( Y is child class of X ) and that same method is overridden in child class then that method can return X as well it can return Y, as Y is a child class of X, but it can't have return type of base class of parent class
+// A method from parent class has X return type ( Y is child class of X ) and that same method is overridden in child class
+// then that method can return X as well it can return Y, as Y is a child class of X, but it can't have return type of base class of parent class
 //class LivingThing {}
 //
 //class Animal extends LivingThing {}
@@ -547,7 +553,8 @@ import java.util.ArrayList;
 
 // Exception Rule:
 
-// An overridden method cannot throw broader or additional checked exceptions, but it may throw fewer or narrower ones. This preserves Liskov Substitution Principle.
+// An overridden method cannot throw broader or additional checked exceptions, but it may throw fewer or narrower ones.
+// This preserves Liskov Substitution Principle.
 // Exception rule applies ONLY to checked exceptions
 // Unchecked exceptions (RuntimeException) are not restricted.
 
@@ -822,7 +829,7 @@ import java.util.ArrayList;
 
 // I : Interface Segregation Principle (ISP)
 // It states that many client specific interfaces are better than one general purpose interface
-// Client shouldn't be forced to implement methods they don't need
+// Client shouldn't be forced to implement methods those they don't need
 
 //interface shape
 //{
