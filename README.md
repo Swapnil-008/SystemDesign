@@ -27,7 +27,10 @@ It is intended as a **learning + interview-prep repository** for backend / SDE r
 - **Observer Pattern**
 - **Strategy Pattern**
 - **Decorator Pattern**
-
+- **Command Pattern**
+- **Adapter Pattern**
+- **Facade Pattern**
+  
 Each pattern is implemented with **simple, readable Java code** to clearly demonstrate:
 - Intent
 - Structure
@@ -47,6 +50,9 @@ src/
 ├── ObserverDesignPattern.java
 ├── StrategyDesignPattern.java
 ├── DecoratorDesignPattern.java
+├── CommandDesignPattern.java
+├── AdapterDesignPattern.java
+├── FacadeDesignPattern.java
 ├── UMLDiagrams.java
 └── Main.java
 ```
