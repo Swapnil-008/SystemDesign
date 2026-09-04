@@ -14,15 +14,15 @@ class MarioCharacter extends Character
         return "Mario\n";
     }
 }
-abstract class CharacterDecorator extends Character
+abstract class Decorator extends Character
 {
     protected Character character;
-    public CharacterDecorator(Character character)
+    public Decorator(Character character)
     {
         this.character = character;
     }
 }
-class HeightUp extends CharacterDecorator
+class HeightUp extends Decorator
 {
     public HeightUp(Character character)
     {
@@ -34,7 +34,7 @@ class HeightUp extends CharacterDecorator
         return character.getAbilities() + " with HeightUp\n";
     }
 }
-class GunPowerUp extends CharacterDecorator
+class GunPowerUp extends Decorator
 {
     public GunPowerUp(Character character)
     {
@@ -46,7 +46,7 @@ class GunPowerUp extends CharacterDecorator
         return character.getAbilities() + " with GunPowerUp\n";
     }
 }
-class StarPowerUp extends CharacterDecorator
+class StarPowerUp extends Decorator
 {
     public StarPowerUp(Character character)
     {

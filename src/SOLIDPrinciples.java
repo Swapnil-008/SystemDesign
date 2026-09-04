@@ -1,9 +1,9 @@
 // Solid Principles:
-// Solid principles are object-oriented design guidelines that help developers to build the software that is maintainable, flexible,
+// Solid principles are set of object-oriented design guidelines that help developers to build the software that is maintainable, flexible,
 // scalable, and easy to extend by avoiding common design problems
 
 // S : Single Responsibility Principle
-// Every class should have only one responsibility and one reason to change
+// Every class should have only one responsibility and only one reason to change
 import java.util.List;
 import java.util.ArrayList;
 
@@ -410,6 +410,7 @@ import java.util.ArrayList;
 //    }
 //}
 //
+// Client:
 //class BankAccount
 //{
 //    List<DepositOnlyAccount> deposits;
@@ -950,7 +951,7 @@ import java.util.ArrayList;
 //        mongoDb.saveToMongo(user);
 //    }
 //}
-    // If client want's to use one another different type of service then it has to update the UserService class which would violate the Open-Close principle
+    // If client want's to use some another type of service, then it has to update the UserService class which would violate the Open-Close principle
 //
 //public class SOLIDPrinciples
 //{

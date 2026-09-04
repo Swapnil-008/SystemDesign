@@ -1,3 +1,6 @@
+// Strategy Design Pattern:
+// Strategy design pattern defines a family of algorithms put them into separate classes, so that they can be changed at run time.
+
 // --- Strategy Interface for Walk ---
 interface WalkableRobot
 {

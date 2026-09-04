@@ -55,30 +55,6 @@ interface Command
     void undo();
 }
 
-// Receiver
-class Light
-{
-    void on()
-    {
-        System.out.println("Light is on");
-    }
-    void off()
-    {
-        System.out.println("Light is off");
-    }
-}
-class Fan
-{
-    void on()
-    {
-        System.out.println("Fan is on");
-    }
-    void off()
-    {
-        System.out.println("Fan is off");
-    }
-}
-
 // Concrete Command
 class LightCommand implements Command
 {
@@ -116,6 +92,32 @@ class FanCommand implements Command
         fan.off();
     }
 }
+
+// Receiver
+class Light
+{
+    void on()
+    {
+        System.out.println("Light is on");
+    }
+    void off()
+    {
+        System.out.println("Light is off");
+    }
+}
+class Fan
+{
+    void on()
+    {
+        System.out.println("Fan is on");
+    }
+    void off()
+    {
+        System.out.println("Fan is off");
+    }
+}
+
+
 
 // Client
 public class CommandDesignPattern
