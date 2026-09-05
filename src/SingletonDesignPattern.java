@@ -10,7 +10,7 @@ class Singleton
     private static volatile Singleton instance = null;    // Lazy initialization
     // private static Singleton instance = new Singleton();   // Eager initialization
     // "Eager creates Early, Lazy creates on demand"
-    // This makes the code simple, but it is not good idea, because if there is no need to create an object, but as we are creating at the time of initialization it would be wastage of resources
+    // This makes the code simple, but it is not good idea, because if there is no need to create an object, but as we have created at the time of initialization it would be wastage of resources
 
     // Step2: Declaring private constructor to prevent object creation from outside class
     private Singleton()
@@ -28,7 +28,7 @@ class Singleton
         {
             // Inner 'if' is used to avoid the multiple object creation
             // If multiple threads entered simultaneously inside outer 'if', then synchronized would allow to only one thread to get access and keep the other threads in waiting state,
-            // but after completing the execution of that thread other thread would get access and create new instance, because of that inner 'if' is added to avoid new instance
+            // but after completing the execution of that thread other thread would get access and create new instance, hence that inner 'if' is added to avoid new instance
             synchronized (Singleton.class)
             {
                 if(instance == null)
